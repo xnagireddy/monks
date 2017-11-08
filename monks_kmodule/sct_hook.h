@@ -26,6 +26,7 @@
 
 #include <linux/preempt.h>
 #include <linux/stop_machine.h>
+#include <linux/vmalloc.h>
 
 #include "msgs.h"
 #include "utils.h"

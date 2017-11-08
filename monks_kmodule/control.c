@@ -5,10 +5,10 @@
 \*****************************************************************************/
 
 static int nsyscalls_state_table = 0;
-static ctl_table *syscalls_state_table;
+static struct ctl_table *syscalls_state_table;
 static struct ctl_table_header *monks_table_header;
 
-static ctl_table state_table[] = {
+static struct ctl_table state_table[] = {
 	{
 		.procname = "syscalls", .mode = 0555
 	},
@@ -31,7 +31,7 @@ static ctl_table state_table[] = {
 	{ 0 }
 };
 
-static ctl_table monks_table[] = {
+static struct ctl_table monks_table[] = {
 	{
 		.procname = "monks", .mode = 0555,
 		.child = state_table

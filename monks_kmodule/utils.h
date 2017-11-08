@@ -4,6 +4,7 @@
 #include <linux/mm.h>
 #include <linux/sched.h>
 #include <linux/fdtable.h>
+#include <linux/vmalloc.h>
 
 #include "../common/mem_ops.h"
 
